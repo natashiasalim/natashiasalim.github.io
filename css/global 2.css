@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 22px;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 50px;
+  background-color: grey;
+  z-index: 10;
+}
+
+main {
+  width: 1200px;
+  padding-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+nav main {
+  padding-top: 10px;
+}
+
+nav main a {
+  text-decoration: none;
+  color: white;
+  font-family: 'Raleway', sans-serif;
+  padding-top: 10px;
+  padding-right: 15px;
+}
+
+nav main a:hover {
+  text-decoration: underline;
+  color: pink;
+}
+
+nav .selalukananatas {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  background-color: snow;
+  border-radius: 15px;
+}
+
+section {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+section.full {
+  background-image: url('../image/bg.jpg');
+  background-size: cover;
+  background-position: top left;
+  background-repeat: no-repeat;
+}
+
+section.a {
+  background-image: url('../image/IMG_3128.jpg');
+  background-size: 300px;
+  background-position: center right;
+  background-repeat: no-repeat;
+}
+
+section .left {
+  position: relative;
+  width: 40%;
+  height: 100%;
+  float: left;
+}
+
+section .right {
+  position: relative;
+  width: 60%;
+  height: 100%;
+  float: left;
+}
+
+section .melayang {
+  position: absolute;
+  top: 200px;
+  left: 100px;
+  width: 40%;
+  height: 200px;
+  /*background-color: pink;*/
+}
+/**/
+
+h1 {
+  font-size: 40px;
+  font-family: 'Avenir', sans-serif;
+  padding-top:200px;
+}
+
+h2 {
+  font-size: 20px;
+  font-family: 'Avenir medium', sans-serif;
+  padding-top: 20px;
+}
+
+.dg {
+  padding-top:0px;
+}
+
+h3{
+  font-size: 20px;
+  font-family: 'Avenir light', sans-serif; 
+}
+
+.end{
+  padding-top: 10px;
+  font-size: 25px;
+  font-family: 'Avenir light', sans-serif;
+}
+
+h4 {
+  font-family: 'Avenir light', sans-serif;
+}
+
+@media (max-width: 1024px) {
+  main {
+    width: 100vw;
+  }
+  
+  section .left, section .right {
+    width: 100%;
+    height: 50vh;
+  }
+  
+  section .melayang {
+    top: 80%;
+    left: 10%;
+    width: 90%;
+  }
+}
