@@ -1,49 +1,509 @@
-<!doctype html>
-<html>
-  <head>
-    <meta name="viewport" content="width=device-width" />
-    <link rel="stylesheet" type="text/css" href="css/global.css" />
-    <title>typography</title>
-  </head>
-
- <body>
- 	<main> 
- 		<title> Latihan 2 </title>
- 		  <div class="container">
-
-      <section class="index">
-      <section class="index2">
- 			<div class="A">
- 				<a href="emails.html"><h2>EMAILS</h2></a>
- 			</div>
- 			<div class="A">
- 			<a href="color.html"><h2>COLOR</h2></a>
- 			</div>
- 			<div class="A">
- 			<a href="watermarks.html"><h2>WATERMARKS</h2></a>
- 			</div>
- 			<div class="A">
- 			<a href="columns.html"><h2>COLUMNS</h2></a>
- 			</div></div>
- 		  </div>
-
-
-    <div class="containerindex">
-    <section class="index3">
-      <p class="end">
-      Typography is the visual component of the written word.</p>
-	
-	 <p class="end2 next">
-	A text is a sequence of words. A text stays the same no matter how it’s rendered. Consider the sentence “I like pizza.” I can print that text on a piece of paper, or read it aloud, or save it in a file on my laptop. It’ll be the same text, just rendered different ways—visually, audibly, digitally.</p>
-
-	 <p class="end2 next">
-	But when “I like pizza” is printed, typography gets involved. All visually displayed text involves typography—whether it’s on paper, a computer screen, or a billboard.</p>
-
-	 <p class="end2 next">
-	Is typography an art? That’s like asking if photography is an art. Some photographers and typographers use techniques that raise their work to the level of art. But at their core, both photography and typography have a utilitarian function. The aesthetic component is separate. Being an effective typographer is more about good skills than good taste. And you can learn the skills.</p>
-   
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="index.js"></script> 
+    <link href="./fontawesome-free-5.13.0-web/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <title>BEAUTE</title>
+</head>
+<body onload="initFavoritesSlider()">
+    <nav>
+        <a href="/index.html" class="logo">BEAUTE</a>
+        <a href="#">
+            <hr>
+        </a>
+        <a href="#" id="nav-link-1" class="dropbtn">
+            HEALTH + WELLNESS
+        </a>
+        <div class="dropdown-content">
+            <div class="card">
+                <img src="https://placeimg.com/310/162/people/greyscale">
+                <div class="card-text">
+                    One
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://placeimg.com/310/162/people/greyscale">
+                <div class="card-text">
+                    One
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://placeimg.com/310/162/people/greyscale">
+                <div class="card-text">
+                    One
+                </div>
+            </div>
+        </div>
+        <a href="#" id="nav-link-2" class="dropbtn">LIFESTYLE</a>
+        <div class="dropdown-content">
+            <div class="card">
+                <img src="https://placeimg.com/310/162/nature/greyscale">
+                <div class="card-text">
+                    One
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://placeimg.com/310/162/nature/greyscale">
+                <div class="card-text">
+                    One
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://placeimg.com/310/162/nature/greyscale">
+                <div class="card-text">
+                    One
+                </div>
+            </div>
+        </div>
+        <a href="#" id="nav-link-3" class="dropbtn">HOME + ENTERTAINING</a>
+        <div class="dropdown-content">
+            <div class="card">
+                <img src="https://placeimg.com/310/162/animals/greyscale">
+                <div class="card-text">
+                    One
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://placeimg.com/310/162/animals/greyscale">
+                <div class="card-text">
+                    One
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://placeimg.com/310/162/animals/greyscale">
+                <div class="card-text">
+                    One
+                </div>
+            </div>
+        </div>
+        <a href="#" class="search"><i class="fas fa-search"></i></a>
+        <div class="hamburger">
+            <i class="fas fa-bars" id="hamburger-toggle" onclick="toggleHamburger()"></i>
+            <a href="#">ABOUT US</a>
+            <a href="#favorite">FAVORITES</a>
+            <div class="hamburger-content">
+                <details>
+                    <summary>
+                        HEALTH + WELLNESS 
+                        <i class="fas fa-chevron-down"></i>
+                    </summary>
+                    <ul>
+                        <li>The Top Foods to Help You Stay Hydrated</li>
+                        <li>Why You Should be Eating These Healthy Fats</li>
+                    </ul>
+                </details>
+                <details>
+                    <summary>
+                        LIFESTYLE
+                        <i class="fas fa-chevron-down"></i>
+                    </summary>
+                </details>
+                <details>
+                    <summary>
+                        HOME + ENTERTAINING
+                        <i class="fas fa-chevron-down"></i>
+                    </summary>
+                </details>
+                <div class="input-wrapper">
+                    <i class="fas fa-search"></i>
+                    <input type="text">
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="vertical-left">
+        <a href="#">ABOUT US</a>
     </div>
-</div>
- 		</main>
-  </body>
+
+    <div class="vertical-right">
+        <a href="#favorite">FAVORITES</a>
+    </div>
+    <div class="center-heading">
+        <!-- <h3>
+            true beauty comes from within
+        </h3> -->
+        <h1>
+            <i>How To Create</i>
+        </h1>
+        <br>
+        <h1>
+            HEALTHY HABITS
+        </h1>
+        <br>
+        <i>Rewire in the right direction.</i>
+    </div>
+
+    <div class="cards web-image">
+        <div class="card">
+            <img src="images/slider-1.jpg">
+            <div class="card-text">
+                <b>A GUIDE TO YOU <i>Skincare Product's Shelf Life</i></b>
+            </div>
+        </div>
+        <div class="card">
+            <img src="images/slider-2.jpg">
+            <div class="card-text">
+                <b><i>The 10 Items Every Adult Should</i> HAVE IN THEIR CLOSET</b>
+            </div>
+        </div>
+        <div class="card">
+            <img src="images/slider-3.jpg">
+            <div class="card-text">
+                <b><i>Why You Should Be</i> EATING THESE HEALTHY FATS</b>
+            </div>
+        </div>
+    </div>
+        
+
+    <div class="swipe-slider mobile-image mt-60">
+        <div>
+            <img src="images/slider-1.jpg" class="center-cropped">
+            <div>
+                <b>A GUIDE TO YOU <i>Skincare Product's Shelf Life</i></b>
+            </div>
+        </div>
+        <div>
+            <img src="images/slider-2.jpg" class="center-cropped">
+            <div>
+                <b><i>The 10 Items Every Adult Should</i> HAVE IN THEIR CLOSET</b>
+            </div>
+        </div>
+        <div>
+            <img src="images/slider-3.jpg" class="center-cropped">
+            <div>
+                <b><i>Why You Should Be</i> EATING THESE HEALTHY FATS</b>
+            </div>
+        </div>
+    </div>
+    
+    <div class="favorites" id="favorite">
+        <hr>
+        <hr>
+        <h4 class="logo">BEAUTE</h4>
+        <h5>FAVORITES</h5>
+       
+        <div class="slide-wrapper">
+            <ul class="slide-carousel" data-target="carousel">
+              <li class="slide-card" data-target="card">
+                  <img src="images/landing-3.jpg">
+              </li>
+              <li class="slide-card" data-target="card">
+                  <img src="images/landing-1.jpg">
+              </li>
+              <li class="slide-card" data-target="card">
+                  <img src="images/landing-2.jpg">
+              </li>
+            </ul>
+            <div class="button-wrapper">
+              <button id="favorites-slider-mobile-nav-left">&#x2039;</button>
+              <button id="favorites-slider-mobile-nav-right">&#x203A;</button>
+            </div>
+        </div>
+        <div class="flex-container social-media-container favorites-slider-nav-container">
+            <span id="favorites-slider-nav-left">&#8636;</span>
+            <div class="favorites-slider-nav-text">
+                <i id="favorites-slider-caption-top">How to Choose Your</i>
+                <br>
+                <span id="favorites-slider-caption-bottom">PLANT - BASED MILK</span>
+            </div>
+            <span id="favorites-slider-nav-right">&#8640;</span>
+        </div>
+    </div>
+    
+    <div class="sign-up-container">
+        <div class="sign-up-text-container">
+            <h1>
+                GIVE YOUR INBOX AND YOUR LIFE
+            </h1>
+            <h2>
+                <i>the Beaute it needs.</i>
+            </h2>
+            <input type="text" placeholder="EMAIL ADDRESS">
+            <small  onclick="toggleSignUp()">SIGN UP</small>
+        </div>
+        <div class="sign-up-picture">
+            <img src="images/signup.png">
+        </div>
+        <div class="modal" id="signup-modal" onclick="toggleSignUp()">
+            <div class="sign-up-container-modal-outer">
+                <div class="sign-up-container-modal-inner">
+                    <h2>THANKYOU FOR SIGNING UP</h2>
+                    <h2>&#9632;</h2>
+                    <h4>You will be the first to know about new releases, giveaways & special projects. </h4>
+                    <h3>STAY TUNED</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="posts-container">
+
+        <hr>
+        <h3>ALL POSTS</h3>
+        <div class="flex-container post-container">
+            <div class="post">
+                <div class="p-4">
+                    <div class="flex-container-mobile">
+                        <a href="#">
+                            <div class="position-relative">
+                                <img src="images/landing-1.jpg">
+                                <h4>Read More</h4>
+                            </div>
+                        </a>
+                        <div class="block-container pl-4">
+                            <h4>HOME + ENTERTAINING</h4>
+                            <h2>
+                                <i>How to Choose Your</i>
+                                <br>
+                                PLANT - BASED MILK
+                            </h2>
+                            <div class="flex-container">
+                                <small class="post-share">SHARE</small>
+                                <i class="fab fa-twitter"></i>
+                                <i class="fab fa-instagram"></i>
+                                <i class="fab fa-facebook-square"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="post">
+                <div class="p-4">
+                    <div class="flex-container-mobile">
+                        <a href="#">
+                            <div class="position-relative">
+                                <img src="images/post-2.png">
+                                <h4>Read More</h4>
+                            </div>
+                        </a>
+                        <div class="block-container pl-4">
+                            <h4>LIFE + STYLE</h4>
+                            <h2>
+                                A GUIDE TO YOU
+                                <i>Skincare <br>Product's Shelf Life</i>
+                                <br>
+                            </h2>
+                            <div class="flex-container">
+                                <small class="post-share">SHARE</small>
+                                <i class="fab fa-twitter"></i>
+                                <i class="fab fa-instagram"></i>
+                                <i class="fab fa-facebook-square"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="flex-container  post-container">
+            <div class="post flex-grow-494 w-100 border-bottom-none">
+                <div class="p-4">
+                    <div class="flex-container-mobile">
+                        <a href="#">
+                            <div class="position-relative">
+                                <img src="images/post-3.png">
+                                <h4>Read More</h4>
+                            </div>
+                        </a>
+                        <div class="block-container pl-4">
+                            <h4>LIFE + STYLE</h4>
+                            <h2>
+                                <i>The 11 Items Every Adult <br> Should</i>
+                                HAVE IN THEIR CLOSET
+                            </h2>
+                            <div class="flex-container">
+                                <small class="post-share">SHARE</small>
+                                <i class="fab fa-twitter"></i>
+                                <i class="fab fa-instagram"></i>
+                                <i class="fab fa-facebook-square"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="">
+                <div class="post ">
+                    <div class="p-4">
+                        <div class="flex-container">
+                            <a href="#">
+                                <div class="position-relative">
+                                    <img src="images/post-4.jpg">
+                                    <h4>Read More</h4>
+                                </div>
+                            </a>
+                            <div class="block-container pl-4">
+                                <h4>HEALTH + WELLNESS</h4>
+                                <h2>
+                                    <i>Why You Should Be</i>
+                                    EATING
+                                    <br>
+                                    THESE HEALTHY FATS
+                                </h2>
+                                <div class="flex-container">
+                                    <small class="post-share">SHARE</small>
+                                    <i class="fab fa-twitter"></i>
+                                    <i class="fab fa-instagram"></i>
+                                    <i class="fab fa-facebook-square"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="post border-bottom-none">
+                    <div class="p-4">
+                        <div class="flex-container">
+                            <a href="#">
+                                <div class="position-relative">
+                                    <img src="images/post-5.jpg">
+                                    <h4>Read More</h4>
+                                </div>
+                            </a>
+                            <div class="block-container pl-4">
+                                <h4>HEALTH + WELLNESS</h4>
+                                <h2>
+                                    THE TOP FOODS
+                                    <i>to <br>Help You Stay Hydrated</i>
+                                </h2>
+                                <div class="flex-container">
+                                    <small class="post-share">SHARE</small>
+                                    <i class="fab fa-twitter"></i>
+                                    <i class="fab fa-instagram"></i>
+                                    <i class="fab fa-facebook-square"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="post">
+            <div class="p-4">
+                <div class="flex-container">
+                    <a href="#">
+                        <div class="position-relative">
+                            <img src="images/post-6-mobile.jpg" class="mobile-image">
+                            <img src="images/post-6-web.jpg" class="web-image">
+                            <h4>Read More</h4>
+                        </div>
+                    </a>
+                    <div class="pl-4 flex-0-auto block-container">
+                        <h4>HEALTH + WELLNESS</h4>
+                        <h2>
+                            <i>How to Create</i>
+                            <br>
+                            HEALTHY HABITS
+                        </h2>
+                        <div class="flex-container">
+                            <small class="post-share">SHARE</small>
+                            <i class="fab fa-twitter"></i>
+                            <i class="fab fa-instagram"></i>
+                            <i class="fab fa-facebook-square"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="flex-container post-container">
+            <div class="post">
+                <div class="p-4">
+                    <div class="flex-container-mobile">
+                        <a href="#">
+                            <div class="position-relative">
+                                <img src="images/landing-3.jpg">
+                                <h4>Read More</h4>
+                            </div>
+                        </a>
+                        <div class="block-container pl-4">
+                            <h4>HOME + ENTERTAINING</h4>
+                            <h2>
+                                <i>Your Playlist For</i>
+                                <br>
+                                A GOOD NIGHT SLEEP
+                            </h2>
+                            <div class="flex-container">
+                                <small class="post-share">SHARE</small>
+                                <i class="fab fa-twitter"></i>
+                                <i class="fab fa-instagram"></i>
+                                <i class="fab fa-facebook-square"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="post">
+                <div class="p-4">
+                    <div class="flex-container-mobile">
+                        <a href="#">
+                            <div class="position-relative">
+                                <img src="images/landing-2.jpg">
+                                <h4>Read More</h4>
+                            </div>
+                        </a>
+                        <div class="block-container pl-4">
+                            <h4>LIFE + STYLE</h4>
+                            <h2>
+                                <i>Your Holiday</i>
+                                <br>
+                                MOVIE GUIDE
+                            </h2>
+                            <div class="flex-container">
+                                <small class="post-share">SHARE</small>
+                                <i class="fab fa-twitter"></i>
+                                <i class="fab fa-instagram"></i>
+                                <i class="fab fa-facebook-square"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="web-footer">
+        <div class="flex-container">
+            <ul>
+                <li><strong>CONTACT US</strong></li>
+                <li>+62 8117 2098</li>
+                <li>Beaute@gmail.com</li>
+            </ul>
+            
+            <ul>
+                <li><strong>ABOUT</strong></li>
+                <li>Our Philosophy</li>
+            </ul>
+        </div>
+        <a href="/index.html" class="logo">
+            BEAUTE
+        </a>
+        <div class="flex-container social-media-container">
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-facebook-square"></i>
+        </div>
+    </footer>
+
+    <footer class="mobile-footer">
+        <a href="/index.html" class="logo">
+            BEAUTE
+        </a>
+        <div class="flex-container social-media-container">
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-facebook-square"></i>
+        </div>
+        <div>
+            <ul>
+                <li><strong>ABOUT</strong></li>
+                <li>Our Philosophy</li>
+            </ul>
+            <ul>
+                <li><strong>CONTACT US</strong></li>
+                <li>+62 8117 2098</li>
+                <li>Beaute@gmail.com</li>
+            </ul>
+        </div>
+    </footer>
+</body>
 </html>
